@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.Links {
+  text-decoration: none;
+  color: black;
+}
