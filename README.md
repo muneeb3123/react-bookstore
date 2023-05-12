@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 🎬 Math Magician <a name="about-project"></a>
+# 🎬 Book store <a name="about-project"></a>
 
 The Bookstore project is a web application built using React. It provides the foundation for a Bookstore website, allowing users to view and manage a collection of books. The project utilizes React Router V6 for client-side routing.
 
