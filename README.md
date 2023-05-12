@@ -73,7 +73,7 @@ Step 2: Locate the folder where you cloned your project to and run commond on te
 
 - GitHub: [@muneeb3123](https://github.com/muneeb3123)
 - Twitter: [@Hafizabd4](https://twitter.com/Hafizabd4)
-- LinkedIn: (https://www.linkedin.com/in/muneb-ur-rehman-01b6bb193/)
+- LinkedIn: (https://www.linkedin.com/in/muneb-ur-rehman-01b6bb193)
 
 <!-- FUTURE FEATURES -->
 
