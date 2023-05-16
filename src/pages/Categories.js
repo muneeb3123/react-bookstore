@@ -1,5 +1,8 @@
+import { useSelector } from 'react-redux';
+
 function Categories() {
-  return <h1>Components</h1>;
+  const { status } = useSelector((store) => store.category);
+  return <h1>{ status }</h1>;
 }
 
 export default Categories;

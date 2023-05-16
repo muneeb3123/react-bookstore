@@ -1,16 +1,19 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/booksSlice';
 
-function IndividualBook({ book }) {
+function IndividualBook({ item, id }) {
+  const dispatch = useDispatch();
   return (
     <div className="main-div">
       <div className="title-author">
-        <h1 className="book-title">{book.title}</h1>
-        <p className="book-author">{book.author}</p>
+        <h1 className="book-title">{item.title}</h1>
+        <p className="book-author">{item.author}</p>
         <div className="action-buttons">
           <button type="submit" className="Buttons comment-button">
             comments
           </button>
-          <button type="submit" className="Buttons remove-button">
+          <button type="submit" className="Buttons remove-button" onClick={() => dispatch(removeBook(id))}>
             Remove
           </button>
           <button type="submit" className="Buttons edit-button">
@@ -32,11 +35,12 @@ function IndividualBook({ book }) {
   );
 }
 IndividualBook.propTypes = {
-  book: PropTypes.shape({
-    index: PropTypes.number,
+  item: PropTypes.shape({
+    id: PropTypes.number,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   }).isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default IndividualBook;
