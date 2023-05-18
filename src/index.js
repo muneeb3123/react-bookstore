@@ -4,6 +4,9 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import './index.css';
 import App from './App';
+import { getBook } from './redux/books/booksSlice';
+
+store.dispatch(getBook());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
