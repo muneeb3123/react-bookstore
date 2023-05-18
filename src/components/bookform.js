@@ -1,18 +1,25 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { createBook } from '../redux/books/booksSlice';
 
 function BookForm() {
   const dispatch = useDispatch();
   const [title, settitle] = useState('');
   const [author, setauthor] = useState('');
+  const [category, setcategory] = useState('');
 
   const addbook = (e) => {
     e.preventDefault();
-    const id = Date.now();
-    dispatch(addBook({ title, author, id }));
+    dispatch(
+      createBook(
+        {
+          title, author, category,
+        },
+      ),
+    );
     settitle('');
     setauthor('');
+    setcategory('');
   };
 
   return (
@@ -33,6 +40,13 @@ function BookForm() {
         onChange={(e) => setauthor(e.target.value)}
         className="author"
         placeholder="Add Author"
+      />
+      <input
+        type="text"
+        value={category}
+        onChange={(e) => setcategory(e.target.value)}
+        className="category"
+        placeholder="Add category"
       />
       <button type="submit" className="submit">
         Add Book

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { deleteBook } from '../redux/books/booksSlice';
 
 function IndividualBook({ item, id }) {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ function IndividualBook({ item, id }) {
           <button type="submit" className="Buttons comment-button">
             comments
           </button>
-          <button type="submit" className="Buttons remove-button" onClick={() => dispatch(removeBook(id))}>
+          <button type="submit" className="Buttons remove-button" onClick={() => dispatch(deleteBook(id))}>
             Remove
           </button>
           <button type="submit" className="Buttons edit-button">
