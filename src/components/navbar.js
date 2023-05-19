@@ -5,24 +5,23 @@ import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 function Navbar() {
   return (
     <nav>
-      <h1 className="nav-header">Homepage</h1>
-      <ul className="nav-links">
-        <li>
-          <NavLink to="/" className="Links">
-            Home
+      <div className="header-links">
+        <h1 className="nav-header">Bookstore CMS</h1>
+        <div className="nav-links">
+          <NavLink to="/" className="Links Books">
+            BOOKS
           </NavLink>
-        </li>
-        <li>
           <NavLink to="/categories" className="Links">
-            Categories
+            CATEGORIES
           </NavLink>
-        </li>
-        <li>
-          <FontAwesomeIcon
-            icon={faCircleUser}
-          />
-        </li>
-      </ul>
+        </div>
+      </div>
+      <div className="login">
+        <FontAwesomeIcon
+          className="icon-login"
+          icon={faCircleUser}
+        />
+      </div>
     </nav>
   );
 }

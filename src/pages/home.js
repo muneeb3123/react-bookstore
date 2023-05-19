@@ -11,6 +11,7 @@ function Home() {
   return (
     <div>
       <Booklist />
+      <div className="separate-farm" />
       <BookForm />
     </div>
   );
