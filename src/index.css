@@ -190,7 +190,7 @@ form button {
   form h3 {
     display: flex;
     justify-content: center;
-    color: #888888;
+    color: #888;
     font-size: 1.5rem;
   }
 
@@ -202,10 +202,6 @@ form button {
 }
 
 @media (min-width: 768px) {
-  nav {
-    grid-template-columns: 6fr 1fr;
-  }
-
   .main-div {
     display: grid;
     grid-template-columns: 1.8fr 1.5fr 1fr;
@@ -226,7 +222,7 @@ form button {
   }
 
   form h3 {
-    color: #888888;
+    color: #888;
     font-size: 1.5rem;
   }
 
