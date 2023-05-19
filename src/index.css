@@ -1,15 +1,293 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+}
+
 nav {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  align-items: center;
+  border: 2px solid #e8e8e8;
+  background-color: #fff;
+  padding: 25px 0 25px 10%;
+}
+
+.header-links {
   display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 50px;
-  list-style: none;
+  gap: 20px;
 }
 
 .Links {
   text-decoration: none;
-  color: black;
+  color: #cbcbcb;
+  font-size: 10px;
+}
+
+.nav-header {
+  font-weight: bold;
+  font-size: 14px;
+  color: #0290ff;
+  margin: 0;
+  line-height: 10px;
+}
+
+.icon-login {
+  height: 1rem;
+  background-color: #0290ff;
+  color: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 55px;
+}
+
+.Books {
+  color: #121212;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.Buttons {
+  border: none;
+  font-size: 16px;
+  border-right: 1px solid #e8e8e8;
+  background-color: #fff;
+  color: #acc9e3;
+  margin-top: 20px;
+  padding: 0;
+  padding-right: 10px;
+}
+
+.book-title {
+  font-size: 1.5rem;
+  margin: 5px 0 0 0;
+  color: #121212;
+}
+
+.book-author {
+  margin: 0;
+  color: #acc9e3;
+}
+
+.category {
+  margin: 0;
+  color: #8b8b8b;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.separater {
+  border: 1px solid #e8e8e8;
+}
+
+.progress-separater {
+  display: flex;
+  flex-direction: column;
+}
+
+.percentage-completed {
+  display: flex;
+  flex-direction: column;
+}
+
+.percentage-complete {
+  font-size: 2rem;
+}
+
+.completed {
+  color: #8b8b8b;
+}
+
+.chapter {
+  padding-left: 20px;
+}
+
+.chapter-heading {
+  color: #bebebe;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0;
+}
+
+.chapter-show {
+  margin: 10px 0;
+}
+
+.update-progress {
+  background-color: #0290ff;
+  border: none;
+  color: #bad7f0;
+  margin-top: 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.book-list {
+  margin: 40px 10%;
+}
+
+.separate-farm {
+  margin: 0 10%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+form {
+  margin: 0 10%;
+}
+
+form input {
+  padding: 5px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #0290ff;
+  border: none;
+  color: #bad7f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .main-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 40px 20px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .title-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chapter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form h3 {
+    display: flex;
+    justify-content: center;
+    color: #888888;
+    font-size: 1.5rem;
+  }
+
+  .input-field {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    grid-template-columns: 6fr 1fr;
+  }
+
+  .main-div {
+    display: grid;
+    grid-template-columns: 1.8fr 1.5fr 1fr;
+    padding: 40px 20px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .progress {
+    flex-direction: row;
+  }
+
+  .progress-separater {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  form h3 {
+    color: #888888;
+    font-size: 1.5rem;
+  }
+
+  .input-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .header-links {
+    gap: 4rem;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .Links {
+    letter-spacing: 3px;
+    font-size: 13px;
+  }
+
+  .nav-header {
+    font-size: 1.5rem;
+  }
+
+  .icon-login {
+    height: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav-header {
+    font-size: 1.875rem;
+  }
+
+  .icon-login {
+    height: 2rem;
+  }
+
+  .Links {
+    font-size: 1rem;
+  }
+
+  .main-div {
+    padding: 40px 50px;
+  }
+
+  .update-progress {
+    padding: 8px 30px;
+  }
+
+  .chapter-heading {
+    font-size: 1rem;
+  }
+
+  form input {
+    padding: 15px;
+  }
+
+  .input-field {
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+  }
 }
