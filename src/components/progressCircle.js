@@ -7,7 +7,7 @@ function ProgressCircle({ percentage }) {
   const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
   return (
-    <svg width="55" height="55" viewBox="-2 2 55 45">
+    <svg width="80" height="80" viewBox="-2 2 55 45">
       <circle
         cx="25"
         cy="25"
