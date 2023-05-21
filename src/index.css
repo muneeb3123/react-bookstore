@@ -66,6 +66,7 @@ nav {
   margin-top: 20px;
   padding: 0;
   padding-right: 10px;
+  color: #4386bf;
 }
 
 .book-title {
@@ -76,11 +77,14 @@ nav {
 
 .book-author {
   margin: 0;
-  color: #acc9e3;
+  font-size: .875rem;
+  font-weight: 300;
+  color: #4386bf;
 }
 
 .category {
   margin: 0;
+  font-weight: 700;
   color: #8b8b8b;
 }
 
@@ -164,7 +168,7 @@ form button {
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-div {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -272,7 +276,7 @@ form button {
   }
 
   .update-progress {
-    padding: 8px 30px;
+    padding: 10px 40px;
   }
 
   .chapter-heading {
